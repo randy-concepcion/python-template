@@ -47,3 +47,9 @@ This repo is a template for Python applications
 ### Dependabot
 
 * Make sure paths in .github/dependabot.yml are correct
+* Check config in repo settings
+
+### Github Workflow
+
+* Update `.github/workflows/build.yaml` as needed
+* You can also disable the workflow in the Actions tab
