@@ -1,0 +1,31 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+  - id: check-ast
+    stages: [commit]
+
+- repo: https://github.com/ambv/black
+  rev: 24.2.0
+  hooks:
+  - id: black
+    stages: [commit]
+    language_version: python3.12
+
+- repo: https://github.com/pycqa/flake8
+  rev: 7.0.0
+  hooks:
+  - id: flake8
+    stages: [commit]
+
+- repo: local
+  hooks:
+  - id: unit-tests
+    name: Unit tests
+    stages: [push]
+    entry: bash -c "bin/test"
+    additional_dependencies:
+      - pytest
+      - pytest-cov
+      - pytest-mock
+    language: python

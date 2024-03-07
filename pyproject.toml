@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "rand"
+name = "python-template"
 version = "0.1.0"
 description = ""
 authors = ["Randy Concepcion <randy.concepcion@gmail.com>"]
@@ -7,9 +7,23 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.2"
+pytest-cov = "^4.1.0"
+flake8 = "^7.0.0"
+black = "^24.2.0"
+pylint = "^3.1.0"
+pre-commit = "^3.6.2"
+pytest-mock = "^3.12.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+omit = [
+    "tests/*"
+]
