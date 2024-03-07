@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "rand"
+name = "python-template"
 version = "0.1.0"
 description = ""
 authors = ["Randy Concepcion <randy.concepcion@gmail.com>"]
@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 
 
 [build-system]
