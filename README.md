@@ -27,8 +27,9 @@ This repo is a template for Python applications
 
 ### pre-commit config
 
+* Install pre-commit hooks: `pre-commit install --hook-type pre-commit --hook-type pre-push`
 * Make any updates to `.pre-commit-config.yaml`
-* Install pre-commit hooks: `pre-commit install`
+  * Make sure the `INSTALL_PYTHON` variable is correct which contains the path to your python virtual environment
 
 ### pytest
 
