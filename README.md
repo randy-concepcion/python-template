@@ -2,3 +2,20 @@
 
 # python-template
 This repo is a template for Python applications
+
+## How-to
+### Python Virtual Environment
+
+* `pyenv update`
+* `pyenv install <python version number>`
+* `pyenv virtualenv <virtual environment name> <python version number>`
+* `pyenv activate <virtual environment name>`
+* `pyenv deactivate`
+* Use `.python-version` containing your virtual environment name to automatically load your python virtual environment
+
+### Poetry
+
+* Install packages from `pyproject.toml`: `poetry install`
+* Add new packages: `poetry add <python package>`
+  * Use `--group dev` config to add to dev group
+* Update to latest packages: `poetry update`
