@@ -1,0 +1,11 @@
+# Python
+__pycache__
+.pytest_cache
+coverage
+htmlcov
+**/.python-version
+**/*.db
+**/.coverage
+
+# SonarCloud
+.scannerwork
