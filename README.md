@@ -24,6 +24,9 @@ This repo is a template for Python applications
 
 * Uncomment `sonar-project.properties`
 * Adjust config values for your repo
+* Make sure `SONAR_TOKEN` environment variable is set
+* Make sure `docker-compose.yaml` file contains the correct paths to the code
+  * Run sonar-scanner docker image locally: `docker-compose run sonar-scanner-cloud`
 
 ### pre-commit config
 
