@@ -37,3 +37,7 @@ This repo is a template for Python applications
 * Alternatively, run reports manually
   * HTML report: pytest -v --cov=. --cov-branch --cov-report html ./tests
   * XML report (for SonarCloud): pytest -v cov=. --cov-branch=xml:coverage/coverage.xml ./tests
+
+### Dependabot
+
+* Make sure paths in .github/dependabot.yml are correct
