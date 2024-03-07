@@ -19,3 +19,8 @@ This repo is a template for Python applications
 * Add new packages: `poetry add <python package>`
   * Use `--group dev` config to add to dev group
 * Update to latest packages: `poetry update`
+
+### SonarCloud
+
+* Uncomment `sonar-project.properties`
+* Adjust config values for your repo
