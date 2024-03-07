@@ -24,3 +24,16 @@ This repo is a template for Python applications
 
 * Uncomment `sonar-project.properties`
 * Adjust config values for your repo
+
+### pre-commit config
+
+* Make any updates to `.pre-commit-config.yaml`
+* Install pre-commit hooks: `pre-commit install`
+
+### pytest
+
+* Update `bin/test` for running tests and report generation
+  * Especially the workaround for resolving report paths for sonar-scanner docker image
+* Alternatively, run reports manually
+  * HTML report: pytest -v --cov=. --cov-branch --cov-report html ./tests
+  * XML report (for SonarCloud): pytest -v cov=. --cov-branch=xml:coverage/coverage.xml ./tests
