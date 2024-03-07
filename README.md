@@ -38,6 +38,8 @@ This repo is a template for Python applications
 * Alternatively, run reports manually
   * HTML report: pytest -v --cov=. --cov-branch --cov-report html ./tests
   * XML report (for SonarCloud): pytest -v cov=. --cov-branch=xml:coverage/coverage.xml ./tests
+* If no unit tests are found, _pytest_ will return an exit code status of `5`
+  * Use `--no-verify` if pushing changes and we have no unit tests to run yet
 
 ### Dependabot
 
