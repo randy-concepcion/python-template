@@ -27,12 +27,14 @@ This repo is a template for Python applications
 * Make sure `SONAR_TOKEN` environment variable is set
 * Make sure `docker-compose.yaml` file contains the correct paths to the code
   * Run sonar-scanner docker image locally: `docker-compose run sonar-scanner-cloud`
+* The `./bin/sonar` script will run the `sonar-scanner` tool locally
 
 ### pre-commit config
 
 * Install pre-commit hooks: `pre-commit install --hook-type pre-commit --hook-type pre-push`
 * Make any updates to `.pre-commit-config.yaml`
   * Make sure the `INSTALL_PYTHON` variable is correct which contains the path to your python virtual environment
+  * Run `pre-commit autoupdate` to update all the package library versions
 
 ### pytest
 
