@@ -1,7 +1,5 @@
 [flake8]
-ignore =
-  # The default 80 characters per line is too short, so we'll ignore this.
-  E501,
-  # Line break before binary operator may be deprecated by PEP8 standards
-  W503
+ignore = 
+  E501,  # Ignore 80 characdter limit
+  W503   # Line break before binary operator may be deprecated by PEP8 standard
 
