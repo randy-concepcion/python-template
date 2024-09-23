@@ -8,14 +8,15 @@ This repo is a template for Python applications
 
 * `pyenv update`
 * `pyenv install <python version number>`
-* `pyenv virtualenv <virtual environment name> <python version number>`
+* `pyenv virtualenv <python version number> <virtual environment name>`
 * `pyenv activate <virtual environment name>`
 * `pyenv deactivate`
+* `pyenv local <python version number>/envs/<virtual environment name>` to create `.python-version`
 * Use `.python-version` containing your virtual environment name to automatically load your python virtual environment
 
 ### Poetry
 
-* Install packages from `pyproject.toml`: `poetry install`
+* Install packages from `pyproject.toml`: `poetry install --no-root`
 * Add new packages: `poetry add <python package>`
   * Use `--group dev` config to add to dev group
 * Update to latest packages: `poetry update`
@@ -41,14 +42,14 @@ This repo is a template for Python applications
 * Update `bin/test` for running tests and report generation
   * Especially the workaround for resolving report paths for sonar-scanner docker image
 * Alternatively, run reports manually
-  * HTML report: pytest -v --cov=. --cov-branch --cov-report html ./tests
-  * XML report (for SonarCloud): pytest -v cov=. --cov-branch=xml:coverage/coverage.xml ./tests
+  * HTML report: `pytest -v --cov=. --cov-branch --cov-report html ./tests`
+  * XML report (for SonarCloud): `pytest -v cov=. --cov-branch=xml:coverage/coverage.xml ./tests`
 * If no unit tests are found, _pytest_ will return an exit code status of `5`
   * Use `--no-verify` if pushing changes and we have no unit tests to run yet
 
 ### Dependabot
 
-* Make sure paths in .github/dependabot.yml are correct
+* Make sure paths in `.github/dependabot.yml` are correct
 * Check config in repo settings
 
 ### Github Workflow
